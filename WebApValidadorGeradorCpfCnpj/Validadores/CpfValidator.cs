@@ -34,9 +34,7 @@ namespace WebApValidadorGeradorCpfCnpj.Validadores
                 cpf.Equals("99999999999")
                 )
                 return false;
-
-
-
+            
                 for (int i = 0; i < 9; i++)
                 soma += int.Parse(tempCpf[i].ToString()) * multiplicador1[i];
             resto = soma % 11;
