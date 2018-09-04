@@ -20,10 +20,10 @@ namespace WebApValidadorGeradorCpfCnpj.Controllers
             string mensagem = "";
             if(cnpjValido)
             {
-                mensagem = "Cnpj valido";
+                mensagem = "Cnpj é valido";
             } else
             {
-                mensagem = "Cnpj invalido";
+                mensagem = "Cnpj é invalido";
             }
 
             return Request.CreateResponse(HttpStatusCode.OK, mensagem);
@@ -38,11 +38,11 @@ namespace WebApValidadorGeradorCpfCnpj.Controllers
 
             if (cpfValido)
             {
-                mensagem = "Cpf valido";
+                mensagem = "Cpf é valido";
             }
             else
             {
-                mensagem = "Cpf invalido";
+                mensagem = "Cpf é invalido";
             }
 
             return Request.CreateResponse(HttpStatusCode.OK, mensagem);
